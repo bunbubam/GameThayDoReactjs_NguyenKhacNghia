@@ -29,7 +29,7 @@ class Dress extends Component {
             <div className='container-fluid'>
                 <div className='dress-main'>
                     <div className='row'>
-                        <div className='col-12 col-md-6 block-left d-flex flex-direction-row justify-content-center'>
+                        <div className='col-12 col-sm-12 col-md-7 col-xl-6 block-left d-flex flex-row justify-content-center align-items-center'>
                             <div className='clothing-box d-flex flex-column justify-content-center pt-xl-5'>
                                 <div className='clothing-flex d-flex flex-direction-row justify-content-around lign-items-baseline mb-5'>
                                     <div onClick={()=>this.changeClothing(Clothing1, 'Clothing1')} className='clothing-item d-flex flex-direction-row justify-content-center align-items-center'>
@@ -71,7 +71,7 @@ class Dress extends Component {
                                 </div>                                                         
                             </div>
                         </div>
-                        <div className='col-12 col-md-6 block-right position-relative d-flex flex-direction-row justify-content-center'>
+                        <div className='col-12 col-sm-12 col-md-5 col-xl-6 block-right position-relative d-flex flex-row justify-content-center align-items-center'>
                             <div className='girl'>
                                 <img src={require('./images/girl.png')} className='girl-main img-fluid'/>
                                 <img src={this.state.clothing} id={this.state.id} className='clothing-main img-fluid'/>

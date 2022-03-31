@@ -1,0 +1,24 @@
+body {
+    background: url(gamethaydo/images/dress-room.jpg) no-repeat;
+    background-position: 50% 53%;
+    background-size: cover;
+}
+.dress-main .row {height: 100vh;}
+.girl img {
+    position: absolute;
+    bottom: 2%;
+    left: 30%;
+}
+.clothing-box {
+    background: url(gamethaydo/images/box.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 800px;
+    height: 905px;
+}
+.clothing-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(gamethaydo/images/menu.png);
+}

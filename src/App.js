@@ -4,7 +4,7 @@ import Dress from './gamethaydo/dress';
 
 function App() {
   return (
-    <Dress></Dress>
+    <Dress/>
   );
 }
 

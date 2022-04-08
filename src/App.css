@@ -21,6 +21,7 @@ body {
     background-size: cover;
     width: 700px;
     height: 792px;
+    padding: 115px 0 0 121px;
 }
 .clothing-item {
     background: url(gamethaydo/images/menu.png) no-repeat;
@@ -28,7 +29,7 @@ body {
     height: 99px;
     cursor: pointer;
 }
-.clothing-item img {width: 45%;}
+.clothing-item img {height: 67px;}
 #Clothing1 {
     top: 25%;
     left: 6.5%;
@@ -74,7 +75,4 @@ body {
     body {overflow: hidden;}
     .dress-main .row {height: 100vh;}
     .girl {top: 3%;}
-}
-@media (min-width: 567px) {
-    .clothing-flex {margin: 0 80px;}
 }

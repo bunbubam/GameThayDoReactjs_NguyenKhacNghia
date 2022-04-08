@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import ChildDress from './childDress';
 import Clothing1 from './images/trangphuc1.png';
 import Clothing2 from './images/trangphuc2.png';
 import Clothing3 from './images/trangphuc3.png';
@@ -9,75 +10,37 @@ import Clothing7 from './images/trangphuc7.png';
 import Clothing8 from './images/trangphuc8.png';
 import Clothing9 from './images/trangphuc9.png';
 import Clothing10 from './images/trangphuc10.png';
+import Clothing11 from './images/trangphuc_mini/trangphuc1.png';
+import Clothing12 from './images/trangphuc_mini/trangphuc2.png';
+import Clothing13 from './images/trangphuc_mini/trangphuc3.png';
+import Clothing14 from './images/trangphuc_mini/trangphuc4.png';
+import Clothing15 from './images/trangphuc_mini/trangphuc5.png';
+import Clothing16 from './images/trangphuc_mini/trangphuc6.png';
+import Clothing17 from './images/trangphuc_mini/trangphuc7.png';
+import Clothing18 from './images/trangphuc_mini/trangphuc8.png';
+import Clothing19 from './images/trangphuc_mini/trangphuc9.png';
+import Clothing20 from './images/trangphuc_mini/trangphuc10.png';
 
 class Dress extends Component {
-    state = {
-        clothing : "",
-        id : "",
-
-    }
-    changeClothing = (imgs, ids) => {
-        return(
-            this.setState({
-                clothing : imgs,
-                id : ids
-            })
-        )
+    listArray = {
+        itemClothings: [
+            {classClothing: "Clothing1", avatar: Clothing11, img: Clothing1},
+            {classClothing: "Clothing2", avatar: Clothing12, img: Clothing2},
+            {classClothing: "Clothing3", avatar: Clothing13, img: Clothing3},
+            {classClothing: "Clothing4", avatar: Clothing14, img: Clothing4},
+            {classClothing: "Clothing5", avatar: Clothing15, img: Clothing5},
+            {classClothing: "Clothing6", avatar: Clothing16, img: Clothing6},
+            {classClothing: "Clothing7", avatar: Clothing17, img: Clothing7},
+            {classClothing: "Clothing8", avatar: Clothing18, img: Clothing8},
+            {classClothing: "Clothing9", avatar: Clothing19, img: Clothing9},
+            {classClothing: "Clothing10", avatar: Clothing20, img: Clothing10}
+        ]
     }
     render() {
         return(
             <div className='container-fluid'>
                 <div className='dress-main'>
-                    <div className='row'>
-                        <div className='col-12 col-sm-12 col-md-7 col-xl-6 block-left d-flex flex-row justify-content-center align-items-center'>
-                            <div className='clothing-box d-flex flex-column justify-content-center pt-xl-5'>
-                                <div className='clothing-flex d-flex flex-direction-row justify-content-around lign-items-baseline mb-5'>
-                                    <div onClick={()=>this.changeClothing(Clothing1, 'Clothing1')} className='clothing-item d-flex flex-direction-row justify-content-center align-items-center'>
-                                        <img src={require('./images/trangphuc_mini/trangphuc1.png')} className='img-fluid'/>
-                                    </div>
-                                    <div onClick={()=>this.changeClothing(Clothing2, 'Clothing2')} className='clothing-item d-flex flex-direction-row justify-content-center align-items-center'>
-                                        <img src={require('./images/trangphuc_mini/trangphuc2.png')} className='img-fluid'/>
-                                    </div>
-                                    <div onClick={()=>this.changeClothing(Clothing3, 'Clothing3')} className='clothing-item d-flex flex-direction-row justify-content-center align-items-center'>
-                                        <img src={require('./images/trangphuc_mini/trangphuc3.png')} className='img-fluid'/>
-                                    </div>
-                                </div>
-                                <div className='clothing-flex d-flex flex-direction-row justify-content-around lign-items-baseline mb-5'>
-                                    <div onClick={()=>this.changeClothing(Clothing4, 'Clothing4')} className='clothing-item d-flex flex-direction-row justify-content-center align-items-center'>
-                                        <img src={require('./images/trangphuc_mini/trangphuc4.png')} className='img-fluid'/>
-                                    </div>
-                                    <div onClick={()=>this.changeClothing(Clothing5, 'Clothing5')} className='clothing-item d-flex flex-direction-row justify-content-center align-items-center'>
-                                        <img src={require('./images/trangphuc_mini/trangphuc5.png')} className='img-fluid'/>
-                                    </div>
-                                    <div onClick={()=>this.changeClothing(Clothing6, 'Clothing6')} className='clothing-item d-flex flex-direction-row justify-content-center align-items-center'>
-                                        <img src={require('./images/trangphuc_mini/trangphuc6.png')} className='img-fluid'/>
-                                    </div>
-                                </div>
-                                <div className='clothing-flex d-flex flex-direction-row justify-content-around lign-items-baseline mb-5'>
-                                    <div onClick={()=>this.changeClothing(Clothing7, 'Clothing7')} className='clothing-item d-flex flex-direction-row justify-content-center align-items-center'>
-                                        <img src={require('./images/trangphuc_mini/trangphuc7.png')} className='img-fluid'/>
-                                    </div>
-                                    <div onClick={()=>this.changeClothing(Clothing8, 'Clothing8')} className='clothing-item d-flex flex-direction-row justify-content-center align-items-center'>
-                                        <img src={require('./images/trangphuc_mini/trangphuc8.png')} className='img-fluid'/>
-                                    </div>
-                                    <div onClick={()=>this.changeClothing(Clothing9, 'Clothing9')} className='clothing-item d-flex flex-direction-row justify-content-center align-items-center'>
-                                        <img src={require('./images/trangphuc_mini/trangphuc9.png')} className='img-fluid'/>
-                                    </div>
-                                </div>
-                                <div className='clothing-flex d-flex flex-direction-row justify-content-around lign-items-baseline'>
-                                    <div onClick={()=>this.changeClothing(Clothing10, 'Clothing10')} className='clothing-item d-flex flex-direction-row justify-content-center align-items-center'>
-                                        <img src={require('./images/trangphuc_mini/trangphuc10.png')} className='img-fluid'/>
-                                    </div>
-                                </div>                                                         
-                            </div>
-                        </div>
-                        <div className='col-12 col-sm-12 col-md-5 col-xl-6 block-right position-relative d-flex flex-row justify-content-center align-items-center'>
-                            <div className='girl'>
-                                <img src={require('./images/girl.png')} className='girl-main img-fluid'/>
-                                <img src={this.state.clothing} id={this.state.id} className='clothing-main img-fluid'/>
-                            </div>
-                        </div>
-                    </div>
+                    <ChildDress fatherProps={this.listArray}/>
                 </div>
             </div>
         )
